@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Advinhação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <header>
+            <h3>JOGO DA ADIVINHAÇÃO</h3>
+            <h1>Qual é o número?</h1>
+            <p>Eu pensei em um número entre 1 e 100</p>
+        </header>
+
+        <main>
+            <div class="game-container">
+                <div class="input-group">
+                    <div class="number-display" id="numberDisplay">-</div>
+                    <input type="number" id="chute" placeholder="Seu Palpite" min="1" max="100">
+                    <button onclick="verificarChute()" class="btn-submit">Chutar</button>
+                </div>
+
+                <div id="feedback" class="feedback"></div>
+
+                <div class="stats-row">
+                    <div class="stat-box">
+                        <span class="stat-label">Tentativas</span>
+                        <span class="stat-value" id="tentativas">0</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-label">Recorde</span>
+                        <span class="stat-value" id="recorde">-</span>
+                    </div>
+                </div>
+
+                <div class="separator"></div>
+
+                <div class="history-section">
+                    <h4>Histórico de chutes</h4>
+                    <div class="history-container" id="historico"></div>
+                </div>
+
+                <button onclick="reiniciarChute()" class="btn-reset">Novo Jogo</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
