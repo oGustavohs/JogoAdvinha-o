@@ -1,46 +1,37 @@
- Jogo da Adivinhação
+# Jogo da Adivinhação
 
-Jogo interativo desenvolvido com HTML, CSS e JavaScript puro, onde o jogador tenta adivinhar um número secreto entre 1 e 100.
+Todo mundo que aprende JavaScript passa pelo jogo da adivinhação. A diferença é o que você faz com ele depois.
 
- Como jogar
+Esse foi o projeto onde o JavaScript saiu da teoria — `if/else`, eventos, manipulação de DOM, estado da aplicação. Coisas que parecem simples mas que você só entende de verdade quando precisa fazer funcionar na prática.
 
-1. O jogo gera um número aleatório entre 1 e 100
-2. Digite seu palpite no campo de input
-3. Clique em **Chutar**
-4. Receba uma dica: *muito alto*, *muito baixo* ou *acertou!*
-5. Tente acertar com o menor número de tentativas possível
-6. Clique em **Reiniciar** para jogar novamente
+**[→ Jogar agora](https://ogustavohs.github.io/JogoAdvinha-o/)**
 
- Funcionalidades
+---
 
-- Geração de número aleatório a cada rodada
-- Feedback em tempo real na tela
-- Contador de tentativas
-- Botão de reiniciar sem recarregar a página
+## Como funciona
 
-Tecnologias utilizadas
+O jogo sorteia um número entre 1 e 100. Você chuta. Ele te diz se foi alto, baixo ou acertou. O objetivo é acertar com o menor número de tentativas possível.
 
-- HTML5
-- CSS3
-- JavaScript
+Simples assim. O desafio tá em fazer a lógica funcionar direito — resetar o estado sem recarregar a página, contar as tentativas corretamente, dar feedback claro em cada etapa.
 
- Estrutura do projeto
+---
 
-jogo-adivinhacao/
-│
-├── index.html
-├── style.css
-└── script.js
+## O que tem no código
 
+```
+index.html   → estrutura e input do usuário
+style.css    → layout e feedback visual
+script.js    → lógica do jogo, eventos, manipulação do DOM
+```
 
- Aprendizados aplicados
+As principais funções que aparecem aqui: `Math.random()`, `Math.floor()`, `document.getElementById()`, condicionais encadeadas e reset de estado via JS puro sem recarregar a página.
 
-- Manipulação do DOM com `document.getElementById()`
-- Geração de números aleatórios com `Math.random()` e `Math.floor()`
-- Estruturas condicionais com `if/else`
-- Funções e variáveis com `let`
-- Eventos com `onclick`
+---
 
- Autor
+## Por que esse projeto ainda está no portfólio
 
-Feito com 💙 como projeto de portfólio durante meus estudos de JavaScript.
+Porque é honesto. Não faz sentido ter só projetos grandes e esconder os primeiros passos — todo dev começou em algum lugar. Esse foi o momento em que a lógica de programação começou a virar código de verdade pra mim.
+
+---
+
+Feito por **[Gustavo Henrique](https://github.com/oGustavohs)** · [Portfólio](https://ogustavohs.github.io/Front-End-Developed/) · [LinkedIn](https://www.linkedin.com/in/gustavo-henrique-3916ba297/)
